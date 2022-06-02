@@ -13,29 +13,39 @@
 }
 nav{
     background-color: #ee5a04;
-    grid-area: nav;
-}
+    grid-area: nav;}
 main{
     background-color: #46ee04;
-    grid-area: main;
-}
+    grid-area: main;}
 #sidebar{
     background-color: #09e5f5;
-    grid-area: sidebar;
-}
+    grid-area: sidebar;}
 #content1{
     background-color: #098bf5;
-    grid-area: content1;
-}
+    grid-area: content1;}
 #content2{
     background-color: #aa09f5;
-    grid-area: content2;
-}
+    grid-area: content2;}
 #content3{
     background-color: #3f0729;
-    grid-area: content3;
-}
+    grid-area: content3;}
 footer{
    background-color:  #e23376 ;
-   grid-area: footer;
-}
+   grid-area: footer;}
+   /*smaller device of 576px and up*/
+   @media (max-width:576px){
+       .container{
+           grid-template-columns: auto;
+           grid-template-rows:
+           0.2fr 0.2fr 2.3fr 2.3fr 1.5fr 1.2fr 1.2fr;
+           grid-template-areas: 
+           "nav"
+           "sidebar"
+           "main"
+           "content1"
+           "content2"
+           "content3"
+           "footer"
+           ;
+        }
+   }
